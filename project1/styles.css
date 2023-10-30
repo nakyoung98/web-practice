@@ -1,0 +1,54 @@
+html{
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #fefae0;
+}
+
+body{
+  box-sizing: border-box;
+  font-family: 'IBM Plex Sans KR', sans-serif;
+}
+
+label{
+  color: #bc6c25;
+}
+
+main{
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+h1{
+  font-family: 'Black Han Sans', sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+
+  color: #283618;
+}
+
+.button{
+  flex: 1;
+}
+
+button{
+  font-family: 'Black Han Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #FFFFFF;
+
+  height: 48px;
+
+  border: 3px double #bc6c25;
+  background-color:#dda15e;
+  
+  width: 100%;
+}

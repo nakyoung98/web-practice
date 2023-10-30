@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="KR">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Gasoek+One&family=IBM+Plex+Sans+KR:wght@300;500&display=swap"
+        rel="stylesheet">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <title>취향을 알려줘!</title>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <section class="taste-section">
+            <h1>당신의 취향을 알려주세요</h1>
+            <form action="https://eobw9rzs2lrcl6w.m.pipedream.net" method="post">
+                <fieldset>
+                    <legend>인적사항</legend>
+                    <label for="name">이름</label>
+                    <input id="name" name="name" type="text" required>
+                </fieldset>
+                <fieldset>
+                    <legend>스포츠 (다중 선택)</legend>
+                    <div>
+                        <input id="soccer" type="checkbox" name="sports" value="soccer"><label for="soccer">축구</label>
+                        <input id="baseball" type="checkbox" name="sports" value="baseball"><label
+                            for="baseball">야구</label>
+                        <input id="basketball" type="checkbox" name="sports" value="basketball"><label
+                            for="basketball">농구</label>
+                        <input id="tennis" type="checkbox" name="sports" value="tennis"><label for="tennis">테니스</label>
+                        <input id="pingpong" type="checkbox" name="sports" value="pingpong"><label
+                            for="pingpong">탁구</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>게임 (단일 선택)</legend>
+                    <div>
+                        <input id="action" type="radio" name="game" value="action"><label for="action">액션</label>
+                        <input id="puzzle" type="radio" name="game" value="puzzle"><label for="puzzle">퍼즐</label>
+                        <input id="fps" type="radio" name="game" value="fps"><label for="fps">FPS</label>
+                        <input id="roleplaying" type="radio" name="game" value="roleplaying"><label
+                            for="roleplaying">롤플레잉</label>
+                        <input id="rythm" type="radio" name="game" value="rythm"><label for="rythm">리듬</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>영화</legend>
+                    <div>
+                        <label for="movie">좋아하는 장르</label>
+                        <select id="movie" name="movie">
+                            <optgroup label="잔인할수도">
+                                <option value="action">액션</option>
+                                <option value="crime">범죄</option>
+                            </optgroup>
+                            <optgroup label="시간 보내기 좋아요">
+                                <option value="romance">로맨스</option>
+                                <option value="comedy">코미디</option>
+                            </optgroup>
+                            <optgroup label="심약자는 시청 금지!">
+                                <option value="horror">호러</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="movie-per-month">한달에 영화를 몇 편 보시나요?</label>
+                        <input id="movie-per-month" name="movie-per-month" type="number" min="0" max="100" step="1">편
+                    </div>
+                    <div>
+                        <label for="most-favorite-movie">제일 좋아하는 영화?</label>
+                        <input id="most-favorite-movie" name="most-favorite-movie" type="text"
+                            placeholder="꽃다발같은 사랑을 했다">
+                    </div>
+                </fieldset>
+                <div class="button">
+                    <button type="submit">
+                        네! 알려드릴게요 :)
+                    </button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
