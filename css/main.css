@@ -1,0 +1,11 @@
+header{
+    padding: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-title{
+    color: white;
+    letter-spacing: 0.1em;
+}

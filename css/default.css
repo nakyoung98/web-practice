@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face{
+    font-family:'DNFBitBitv2';
+    font-style:normal;font-weight:400;src:url('//cdn.df.nexon.com/img/common/font/DNFBitBitv2.otf')format('opentype');
+}
+
+:root{
+    --header-font: 'DNFBitBitv2';
+    --content-font: 'Pretendard-Regular';
+    --main-color: #0C356A;
+    --sub-color: #0174BE;
+    --content-color: #313131;
+    --background-color: #fffbf1;
+    --container-border-color: #FFC436;
+    --container-color: #FFF0CE;
+}
+
+html{
+    background-color: var(--background-color);
+}
+
+body{
+    font-family: var(--content-font);
+    color: var(--content-color);
+    font-size: 100%;
+    letter-spacing: 0.02em;
+}
+
+h1{
+    font-family: var(--header-font);
+    color: var(--main-color);
+    font-size: 300%;
+}
+
+h2{
+    font-family: var(--header-font);
+    font-size: 200%;
+    color: var(--main-color);
+}
+
+a{
+    font-family: var(--header-font);
+    font-size: 150%;
+    text-decoration: none;
+}
+a:visited{
+    color: var(--main-color);
+}
+a:hover{
+    color: var(--sub-color);
+}
+a.ready{
+    color: var(--content-color);
+}
+
+header{
+    background-color: var(--main-color);
+    position: sticky;
+    width: 100%;
+    top: 0;
+}
+
+section{width: 720px;
+    border: 3px solid var(--container-border-color);
+    border-radius: 16px;
+
+    padding: 16px;    
+    margin: 32px auto;
+
+    background-color: var(--container-color);
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+ul li::before {
+    font-family: var(--header-font);
+    font-size: 150%;
+    color: #0174BE;
+    /* content: "-----------------------"; */
+}
+
+li{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+li p{
+    background-color: var(--background-color);
+    padding: 8px;
+    border-radius: 8px;
+}
+
+hr.thick {
+    background-color: #fff;
+    height: 16px;
+    border: 1px solid var(--container-border-color);
+    border-radius: 16px;
+    margin: 16px 0;
+}
+
+/* hr내에 할 말 있으면 이것을.. */
+hr.thick::before {
+    display: block;
+    content: "";
+    margin-left: 8px;
+    height: 16px;
+}
