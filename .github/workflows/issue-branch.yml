@@ -1,0 +1,14 @@
+mode: immediate
+
+autoLinkIssue: true
+autoCloseIssue: true
+
+defaultBranch: 'develop'
+branchName: '${issue.number}-${issue.title[0,32]}'
+branches:
+  - label: enhancement
+    prefix: feature/
+  - label: bug
+    prefix: fix/
+  - label : '*'
+    prefix: issue/
