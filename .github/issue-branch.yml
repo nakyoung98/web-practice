@@ -1,9 +1,6 @@
-mode: auto
-
 autoLinkIssue: true
 autoCloseIssue: true
 
-defaultBranch: 'develop'
 branchName: '${issue.number}-${issue.title}'
 branches:
   - label: enhancement
