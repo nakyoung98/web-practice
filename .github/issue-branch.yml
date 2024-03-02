@@ -1,7 +1,7 @@
+branchName: "${issue.number}-${issue.title}"
 autoLinkIssue: true
 autoCloseIssue: true
-
-branchName: '${issue.number}-${issue.title}'
+gitSafeReplacementChar: "-"
 branches:
   - label: enhancement
     prefix: feature/
