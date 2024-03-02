@@ -17,7 +17,13 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: echo branch
-        run: echo ${{steps.create-issue-branch}}
+        run: 
+          echo "HI"
+          echo ${{steps.create-issue-branch}}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+          
       - name: new Branch
         uses: peterjgrainger/action-create-branch@v2.2.0
         if: steps.create-issue-branch.outputs.branchName != ''
