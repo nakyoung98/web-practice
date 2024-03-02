@@ -7,7 +7,8 @@ on:
     types: [ opened ]
 
 jobs:
-  create_issue_branch_job:
+  create-issue-branch:
+    name: "create issue branch"
     runs-on: ubuntu-latest
     steps:
       - name: Create Issue Branch
@@ -15,5 +16,11 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
-      - name: Echo Branch
-        run: echo ${{ steps.Create_Issue_Branch.outputs.branchName }}
+      - name: new Branch
+        uses: peterjgrainger/action-create-branch@v2.2.0
+        if: steps.create-issue-branch.outputs.branchName != ''
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          branch: ${{steps.create-issue-branch.outputs.branchName}}
+          sha: '${{ github.event.pull_request.head.sha }}'
