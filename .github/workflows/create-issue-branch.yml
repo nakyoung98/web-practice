@@ -20,7 +20,7 @@ jobs:
       - name: echo branch
         run: 
           echo "HI"
-          echo ${{steps.create-issue-branch}}
+          echo ${{steps.create-issue-branch.outputs}}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
