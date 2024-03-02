@@ -19,7 +19,7 @@ jobs:
 
       - name: echo branch
         run: 
-          echo ${{toJSON(steps.create-issue-branch.outputs)}}
+          echo ${{toJSON(steps.create-issue-branch)}}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
