@@ -4,7 +4,7 @@ autoLinkIssue: true
 autoCloseIssue: true
 
 defaultBranch: 'develop'
-branchName: '${issue.number}-${issue.title[0,32]}'
+branchName: '${issue.number}-${issue.title}'
 branches:
   - label: enhancement
     prefix: feature/
