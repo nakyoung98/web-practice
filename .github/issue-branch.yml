@@ -10,4 +10,4 @@ branches:
   - label: bug
     prefix: fix/
   - label : '*'
-    prefix: issue/
+    prefix: feature/
