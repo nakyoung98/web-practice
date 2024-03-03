@@ -41,7 +41,7 @@ jobs:
       - name: comment decline pr
         id: comment_decline_pr
         run: |
-          if [[ "${{ steps.check_is_ancestor.outputs.mergeType }}" == "three-way"]]; then
+          if [[ "${{ steps.check_is_ancestor.outputs.mergeType }}" == "three-way" ]]; then
             curl \
             -X POST \
             -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
