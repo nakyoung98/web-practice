@@ -1,4 +1,4 @@
-defaultBranch: develop
+defaultBranch: "develop"
 branchName: "${issue.number}-${issue.title[0,32]}"
 autoLinkIssue: true
 autoCloseIssue: true
