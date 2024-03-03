@@ -1,6 +1,6 @@
 mode: immediate
 defaultBranch: develop
-branchName: "${issue.number}-${issue.title[0,32]}"
+branchName: "issue-${issue.number}-${issue.title[0,32]}"
 gitSafeReplacementChar: "-"
 branches:
   - label: enhancement
