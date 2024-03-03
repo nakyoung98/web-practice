@@ -1,5 +1,6 @@
 mode: immediate
-branchName: "${issue.number}-${issue.title}"
+defaultBranch: develop
+branchName: "${issue.number}-${issue.title[0,32]}"
 autoLinkIssue: true
 autoCloseIssue: true
 gitSafeReplacementChar: "-"
